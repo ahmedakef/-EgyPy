@@ -7,13 +7,16 @@ body {
   font-family: Droid Arabic Kufi,flat , serif; 
   text-align: center;
  }
+nav .navbar-left a{
+  padding: 10px 0px 0px 10px ;
+}
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .entrance-pic{
-    visibility: hidden; 
+  visibility: hidden; 
 }
 
 .intro-background{
@@ -27,15 +30,20 @@ img {
   margin-top: 180px;
   margin-bottom: 100px;
 }
+
 .brief{
-  background-color: #222439;
+  /*background-color: #222439;*/
+  background-color:#1D2733;
   color:#EAE7EE;
+  min-height: 300px;
 }
-.brief .col-md-4{
-  padding-top: 70px;
-  padding-bottom: 50px;
+
+ol.carousel-indicators{
+  margin-bottom: -40px;
 }
+
 .courses{
+  background-color: #DFEAF1;
 }
 .courses img{
   margin-top: 40px;

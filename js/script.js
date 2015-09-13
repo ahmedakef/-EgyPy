@@ -50,6 +50,42 @@
 			}
 		});
 
+		$('.PyGame').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideLeft");
+			}
+		});
+
+		$('.Tkinter').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideLeft");
+			}
+		});
+
+		$('.Data').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideDown");
+			}
+		});
+		
+		$('.prob').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideRight");
+			}
+		});
+
 
 
 	});
