@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@font-face {
+  font-family: 'flat';
+  src: url("../fonts/JF Flat regular.ttf");
+  font-style: normal; }
+body {
+  font-family: Droid Arabic Kufi,flat , serif; 
+  text-align: center;
+ }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entrance-pic{
+    visibility: hidden; 
+}
+
+.intro-background{
+  background-image: url("../img/intro.jpeg");
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -20px;
+}
+.intro{
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+.brief{
+  background-color: #222439;
+  color:#EAE7EE;
+}
+.brief .col-md-4{
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.courses{
+}
+.courses img{
+  margin-top: 40px;
+  margin-bottom: 42px;
+  width: 250px;
+  height: 250px;
+}
