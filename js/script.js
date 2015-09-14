@@ -4,6 +4,40 @@
 		});
 	});*/
 
+ 	$(".courses-btn").click(function (){
+
+	    $('html, body').animate({
+	        scrollTop: $(".courses").offset().top
+	    }, 1000);
+
+ 	});
+
+ 	$(".article-btn").click(function (){
+
+	    $('html, body').animate({
+	        scrollTop: $(".article").offset().top
+	    }, 1000);
+
+ 	});
+
+ 	$(".pics-btn").click(function (){
+
+	    $('html, body').animate({
+	        scrollTop: $(".pics").offset().top
+	    }, 1000);
+
+ 	});
+
+ 	$(".about-me-btn").click(function (){
+
+	    $('html, body').animate({
+	        scrollTop: $(".about-me").offset().top
+	    }, 1000);
+
+ 	});
+
+
+
  	$(window).scroll(function() {
 		$('.basics').each(function(){
 		var imagePos = $(this).offset().top;

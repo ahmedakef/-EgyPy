@@ -41,13 +41,34 @@ img {
 ol.carousel-indicators{
   margin-bottom: -40px;
 }
-
-.courses{
+.headerOfaection{
+  margin-top: 40px;
+}
+.courses,.pics{
   background-color: #DFEAF1;
+}
+.courses .col-md-4{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.panel,.thumbnail{
+  background-color:transparent;
+}
+.panel-body{
+  height: 460px;
 }
 .courses img{
   margin-top: 40px;
   margin-bottom: 42px;
-  width: 250px;
-  height: 250px;
 }
+
+.article,.about-me{
+  background-color: #EDF0F9;
+}
+.about-me{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.lastaa {
+  background-color: #212A34;
+  color: #556678; }
