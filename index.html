@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="200">
 
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -33,13 +33,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">الشعار</a>
+      <a class="navbar-brand" href="#intro" id="website-logo">الشعار</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
+   <!--        <li class="dropdown">
           <a href="#" class="dropdown-toggle courses-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المساقات <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">أساسيات البرمجة</a></li>
@@ -50,10 +50,11 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">المشاكل والحلول</a></li>
           </ul>
-        </li>
-        <li class="active article-btn"><a href="#">المقالات <span class="sr-only">(current)</span></a></li>
-        <li><a href="#" class="pics-btn">الصور</a></li>
-        <li><a href="#" class="about-me-btn" >عني</a></li>
+        </li>-->
+        <li class="active "><a href="#courses" class="courses-btn">المساقات <span class="sr-only">(current)</span></a></li>
+        <li><a href="#article" class="article-btn">المقالات</a></li>
+        <li><a href="#pics" class="pics-btn">الصور</a></li>
+        <li><a href="#about-me" class="about-me-btn" >عني</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-left">
         <li>
@@ -66,13 +67,12 @@
 </nav>
 
 
-    <div class="container-fluid intro-background">
+    <div class="container-fluid intro-background" id="intro">
       <div class="container">
         <div class="row intro">
           <div class="col-md-12">
-              <h3 class="text-center">تريد تعلم برمجة</h3>
-              <h1 class="text-center">بايثون</h1>
-              <h3 class="text-center">من البداية حتي الإحتراف ؟</h3>
+              <h1 class="text-center">EgyPy</h1>
+              <h3 class="text-center">دليلك لتعلم بايثون باللغة العربية</h3>
           </div>
         </div>
       </div>
@@ -83,7 +83,6 @@
 
 
     <div class="cotainer-fluid brief">
-      <div class="container">
 
 
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -125,7 +124,6 @@
 
           <!-- Controls -->
         </div>
-      </div>
     </div>
 
 
@@ -133,7 +131,7 @@
 
 
 
-    <div class="container-fluid courses">
+    <div class="container-fluid courses" id="courses">
       <div class="container">
         <div class="row headerOfaection">
           <h1 class="text-right">المساقات</h1>
@@ -236,7 +234,7 @@
 
 
 
-    <div class="container-fluid article">
+    <div class="container-fluid article" id="article">
       <div class="container">
 
         <div class="row headerOfaection">
@@ -247,7 +245,7 @@
 
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wikipedia-logo.png/150px-Wikipedia-logo.png" alt="المقالة الأولي">
+              <img src="img/atical-1.jpg" class="img-responsive entrance-pic artic-1" alt="المقالة الأولي">
               <div class="caption">
                 <h3>طريقك إلي بايثون</h3>
                 <p>في هذه المقالة نتكلم عن بايثون .</p>
@@ -257,102 +255,144 @@
           
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="http://www.nesdis.noaa.gov/DSCOVR/images/NASA_logo.png" alt="المقالة الأولي">
+              <img src="img/django-article.jpg" class="img-responsive entrance-pic artic-2" alt="المقالة الأولي">
               <div class="caption">
-                <h3>طريقك إلي بايثون</h3>
-                <p>في هذه المقالة نتكلم عن بايثون .</p>
+                <h3>يعني اية Django</h3>
+                <p> لو عاوز تعرف يعني اية Django واية اهميتة اقرا البوست دة  .</p>
               </div>
             </div>
           </div>
           
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wikipedia-logo.png/150px-Wikipedia-logo.png" alt="المقالة الأولي">
+              <img src="img/Raspberry-Pi .jpg" class="img-responsive entrance-pic artic-3" alt="المقالة الأولي">
               <div class="caption">
-                <h3>طريقك إلي بايثون</h3>
-                <p>في هذه المقالة نتكلم عن بايثون .</p>
+                <h3>بايثون و Raspberry Pi</h3>
+                <p>النهاردة هنتكلم عن ال Raspberry Pi .</p>
               </div>
             </div>
           </div>
           
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wikipedia-logo.png/150px-Wikipedia-logo.png" alt="المقالة الأولي">
-              <div class="caption">
-                <h3>طريقك إلي بايثون</h3>
-                <p>في هذه المقالة نتكلم عن بايثون .</p>
-              </div>
-            </div>
-          </div>
-
         </div>
+
       </div>
     </div>
 
 
 
-    <div class="container-fluid pics">
+    <div class="container-fluid pics" id="pics">
       <div class="container">
 
         <div class="row headerOfaection">
-          <h1 class="text-right">الصور</h1>
+          <h1 class="text-center">الصور</h1>
         </div>
 
         <div class="row">
 
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wikipedia-logo.png/150px-Wikipedia-logo.png" alt="المقالة الأولي">
+              <a href="#pics" data-toggle="modal" data-target="#myModal1"><img src="img/Micropython.jpg" class="img-responsive entrance-pic pic-3" alt="المقالة الأولي "></a>
               <div class="caption">
-                <h3>طريقك إلي بايثون</h3>
-                <p>في هذه المقالة نتكلم عن بايثون .</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="http://www.nesdis.noaa.gov/DSCOVR/images/NASA_logo.png" alt="المقالة الأولي">
-              <div class="caption">
-                <h3>طريقك إلي بايثون</h3>
-                <p>في هذه المقالة نتكلم عن بايثون .</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wikipedia-logo.png/150px-Wikipedia-logo.png" alt="المقالة الأولي">
-              <div class="caption">
-                <h3>طريقك إلي بايثون</h3>
-                <p>في هذه المقالة نتكلم عن بايثون .</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wikipedia-logo.png/150px-Wikipedia-logo.png" alt="المقالة الأولي">
-              <div class="caption">
-                <h3>طريقك إلي بايثون</h3>
-                <p>في هذه المقالة نتكلم عن بايثون .</p>
+                <h3>بايثون يتحكم في الشرائح</h3>
+                <p>بإستخدام لغة بايثون تستطيع التحكم في الشرائح .</p>
               </div>
             </div>
           </div>
 
+          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">بايثون يتحكم في الشرائح</h4>
+                </div>
+                <div class="modal-body">
+                  <p>بإستخدام لغة بايثون تستطيع التحكم في الشرائح . </p>
+                  <img src="img/Micropython.jpg" class="img-responsive" alt="المقالة الأولي ">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <a href="#pics" data-toggle="modal" data-target="#myModal2"><img src="img/python-pic.png" class="img-responsive entrance-pic pic-3" alt="المقالة الأولي"></a>
+              <div class="caption">
+                <h3>البساطة</h3>
+                <p>لا تحتاج إلي تراكيب لغوية معقدة في بايثون .</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">البساطة</h4>
+                </div>
+                <div class="modal-body">
+                  <p>لا تحتاج إلي تراكيب لغوية معقدة في بايثون .</p>
+                  <img src="img/python-pic.png" class="img-responsive" alt="المقالة الأولي ">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7V94Vv4MewNdJG8e3Ax4mC" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <a href="#pics" data-toggle="modal" data-target="#myModal3"><img src="img/popular-languages.png" class="img-responsive entrance-pic pic-3" alt="المقالة الأولي"></a>
+              <div class="caption">
+                <h3>أكثر لغات البرمجة انتشارا</h3>
+                <p>من حيث الإستخدام وسوق العمل .</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">أكثر لغات البرمجة انتشارا</h4>
+                </div>
+                <div class="modal-body">
+                  <p>من حيث الإستخدام وسوق العمل .</p>
+                  <img src="img/popular-languages.png" class="img-responsive" alt="المقالة الأولي ">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
+
+
       </div>
     </div>
 
 
-    <div class="container-fluid about-me">
+    <div class="container-fluid about-me" id="about-me">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="img/mahmoud.png" class="img-responsive" alt="mahmoud">
+            <img src="img/mahmoud.png" class="img-responsive entrance-pic mahmoud-pic" alt="mahmoud">
           </div>
           <div class="col-md-8 text-right">
-            <h2>محمد أحمد</h2>
+            <h2>محمود أحمد</h2>
             <p>أكتب أي حاجه هنا بقي عشان الكلام يبقي واضح وكده .</p>
           </div>
         </div>
@@ -361,17 +401,12 @@
 
 
 
-
-
-    <div class="container-fluid lastaa">
+    <div class="container-fluid bg-info brought-by">
       <div class="container">
         <div class="row">
-          <div class="nav">
-              <p class="pull-left navbar-text">. 2015 by 
-              <a href="https://www.facebook.com/ahmedakef4"> ahmed akef</a> 
-              ©
+              <p> © تم تصميم المحتوي بواسطة  
+                <a href="https://www.facebook.com/ahmedakef4">أحمد عاكف</a> .
               </p>
-          </div>
         </div>
       </div>
     </div>
