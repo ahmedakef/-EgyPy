@@ -33,6 +33,9 @@ img {
   margin-top: 180px;
   margin-bottom: 100px;
 }
+.intro h1{
+  font-size: 50px;
+}
 
 .brief{
   /*background-color: #222439;*/
@@ -47,7 +50,7 @@ ol.carousel-indicators{
 .headerOfaection{
   margin-top: 40px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: right;
 }
 .courses,.pics{
   background-color: #DFEAF1;
@@ -70,7 +73,7 @@ ol.carousel-indicators{
 .article,.about-me{
   background-color: #EDF0F9;
 }
-.pics img{
+.pics .col-md-4 img{
   max-width: 250px;
   max-height: 250px;
 }
