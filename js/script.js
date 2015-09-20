@@ -1,23 +1,12 @@
  $(document).ready(function() {
 
+ 	//the last item effect
 
+	$(".open-it").click(function(){
+	     $(".open-source").toggle();
+	     $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+	 	});
 
-
- 	/*load models 
-
- 	  $('#article').click(function (){
-       $("#load-models").load("models/third-3-courses.html");              
-  	});
-	*/
-
-
-    $(".open-it").click(function(){
-        $(".open-source").toggle();
-        $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
-    });
-
-
-    $('[data-toggle="tooltip"]').tooltip();
 
 
  	/* change active class */
@@ -35,11 +24,24 @@
 
 
    /* make links go smoothly to its content */
+/*
+
+   function move(where){
+	    $('html, body').animate({
+	        scrollTop: $(where).offset().top
+	    }, 1000);
+   }
 
 
 
+ 	$("#website-logo").click( move(".intro-background") );
+ 	$(".courses-btn").click( move(".courses" ) );
+ 	$(".article-btn").click( move(".article" ) );
+ 	$(".pics-btn").click( move(".pics" ) );
+ 	$(".about-me-btn").click( move(".about-me" ) );
 
 
+*/
  	$("#website-logo").click(function (){
 
 	    $('html, body').animate({
@@ -86,203 +88,78 @@
  	/* show courses   */
 
 
+ $(window).scroll(function() {
 
- 	$(window).scroll(function() {
+		function scroll_image(pic,animation) {
 
-		$('.basics').each(function(){
-		var imagePos = $(this).offset().top;
+		    	$(pic).each(function(){
+				var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideRight");
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+400) {
+						$(this).addClass(animation);
+					}
+				});
+
+		}
+
+		var animate_images = {
+		  ".basics":"slideRight",
+		  ".oop":"slideUp",
+		  ".django":"slideLeft",
+		  ".Qt":"slideDown",
+		  ".chal":"slideRight",
+		  ".PyGame":"slideLeft",
+		  ".Tkinter":"slideLeft",
+		  ".Data":"slideDown",
+		  ".prob":"slideRight",
+		  ".artic-1":"slideRight",
+		  ".artic-2":"slideUp",
+		  ".artic-3":"slideLeft",
+		  ".pic-3":"slideLeft", // should change
+		  ".mahmoud-pic":"bigEntrance", 
+		  ".about-me h2":"slideRight"
+		};
+
+
+		for(var key in animate_images) {
+		    scroll_image( key , animate_images[key] );
 			}
-		});
-
-		$('.oop').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideUp");
-			}
-		});
-
-		$('.django').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideLeft");
-			}
-		});
-
-		$('.Qt').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideDown");
-			}
-		});
-
-		$('.chal').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideRight");
-			}
-		});
-
-		$('.PyGame').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideLeft");
-			}
-		});
-
-		$('.Tkinter').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideLeft");
-			}
-		});
-
-		$('.Data').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideDown");
-			}
-		});
-		
-		$('.prob').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideRight");
-			}
-		});
 
 
 
-
-/*      artical          */  
-
-
-
-
-
-		$('.artic-1').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideRight");
-			}
-		});
-
-		$('.artic-2').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideUp");
-			}
-		});
-
-		$('.artic-3').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideLeft");
-			}
-		});
-
-
-		/* pics */ 
-
-
-
-		$('.pic-1').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideDown");
-			}
-		});
-
-		$('.pic-2').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideRight");
-			}
-		});
-
-		$('.pic-3').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideLeft");
-			}
-		});
-
-
-
-
-		/* about me */
-
-
-
-		$('.mahmoud-pic').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("bigEntrance");
-			}
-		});
-
-		$('.about-me h2').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideRight");
-			}
-		});
 
 		$('.about-me p').each(function(){
-		var imagePos = $(this).offset().top;
+			var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+450) {
-				$(this).addClass("slideLeft");
-			}
-		});
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+450) {
+					$(this).addClass("slideLeft");
+				}
+			});
 
 		$('.brought-by').each(function(){
-		var imagePos = $(this).offset().top;
+			var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
-				$(this).delay(5000).addClass("fadeIn");
-			}
-		});
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+700) {
+					$(this).delay(5000).addClass("fadeIn");
+				}
+			});
 
 
 	});
 
 
+
  });
+
+
+
+
+ 	/*load models 
+
+ 	  $('#article').click(function (){
+       $("#load-models").load("models/third-3-courses.html");              
+  	});
+	*/
