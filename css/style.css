@@ -4,7 +4,7 @@
   src: url("../fonts/JF Flat regular.ttf");
   font-style: normal; }
 body {
-  font-family: Droid Arabic Kufi,flat , serif; 
+  font-family: Droid Arabic Kufi,flat , serif;
   text-align: center;
   position: relative;
  }
@@ -27,7 +27,7 @@ img {
 
 }
 .entrance-pic,.about-me h2,.about-me p,.brought-by{
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .intro-background{
@@ -102,4 +102,3 @@ ol.carousel-indicators{
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
