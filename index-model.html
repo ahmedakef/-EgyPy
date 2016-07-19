@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>تعلم بايثون</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="200">
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#intro" id="website-logo">الشعار</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+       <!--        <li class="dropdown">
+              <a href="#" class="dropdown-toggle courses-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المساقات <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">أساسيات البرمجة</a></li>
+                <li><a href="#">البرمجة الشيئية oop</a></li>
+                <li><a href="#">برمجة التطبيقات Qt</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">برمجة الألعاب pygame</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">المشاكل والحلول</a></li>
+              </ul>
+            </li>-->
+            <li class="active "><a href="#courses" class="courses-btn">المساقات <span class="sr-only">(current)</span></a></li>
+            <li><a href="#article" class="article-btn">المقالات</a></li>
+            <li><a href="#pics" class="pics-btn">الصور</a></li>
+            <li><a href="#about-me" class="about-me-btn" >عني</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-left">
+            <li>
+              <a href="https://www.youtube.com/channel/UCmrvsMQhv5G7pWSDnLRwoJg/playlists" target="_blank"><img src="img/YouTube.png"></a>
+            </li>
+            <li><a href="https://www.facebook.com/groups/pycommunity/" target="_blank"><img src="img/Facebook.png"></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="container-fluid intro-background" id="intro">
+      <div class="container">
+        <div class="row intro">
+          <div class="col-md-12">
+              <h1 class="text-center">EgyPy</h1>
+              <h3 class="text-center">دليلك لتعلم بايثون باللغة العربية</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="cotainer-fluid brief">
+
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="img/color.png" alt="color">
+              <div class="carousel-caption">
+                <h2>شرح أساسيات اللغة</h2>
+                  <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/color.png" alt="color">
+              <div class="carousel-caption">
+                <h2>تطبيقات بسيطة لكل درس</h2>
+                  <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أ</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/color.png" alt="color">
+              <div class="carousel-caption">
+                <h2>مسابقات أسبوعية</h2>
+                  <p>خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم. قام البروفيسور "ريتشارد ماك لينتوك" (Richard McClintock) وهو بروفيسور</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid courses" id="courses">
+      <div class="container">
+        <div class="row headerOfaection">
+          <h1>المساقات</h1>
+        </div>
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>أساسيات لغة بايثون</h2>
+                 <a href="#courses" data-toggle="modal" data-target="#basics-model">
+                  <img src="img/basics.png" class="img-responsive entrance-pic basics" alt="basics">
+                 </a>
+                <p>تعلم أساسيات اللغة وطرق كتابتها</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="modal fade" id="basics-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">أساسيات لغة بايثون</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7kzsIpO3s7hnf5hl6zu-QR" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>البرمجة الشيئية oop</h2>
+                <a href="#courses" data-toggle="modal" data-target="#oop-model">
+                  <img src="img/oop.png" class="img-responsive entrance-pic oop" alt="oop">
+                </a>
+                <p>تعلم برمجة الكائنات والتوريث والوظائف والصفات .</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="oop-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">البرمجة الشيئية oop</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq6WZBtARcgiWgz_S8wjJDft" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>جانغو</h2>
+                <a href="#courses" data-toggle="modal" data-target="#django-model">
+                  <img src="img/django.png" class="img-responsive entrance-pic django" alt="django">
+                </a>
+                <p>تعلم أساسيات إطار العمل جانغو  وتنفيذ مشروعات به .</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="django-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">جانغو</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7-rmF_QLFblZ_E3gN6wmyU" frameborder="0" allowfullscreen></iframe><br><br>
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7V94Vv4MewNdJG8e3Ax4mC" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>مكتبة Qt</h2>
+                <a href="#courses" data-toggle="modal" data-target="#Qt-model">
+                  <img src="img/qt.png" class="img-responsive entrance-pic Qt" alt="Qt">
+                </a>
+                <p>عمل تطبيقات لسطح المكتب متوافقة مع كافة الأنظمة .</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="Qt-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">مكتبة Qt</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5OyK7Tp25kx_m5rPr76DEC" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>التحديات</h2>
+                 <a href="#courses" data-toggle="modal" data-target="#chal-model">
+                <img src="img/chal.png" class="img-responsive entrance-pic chal" alt="challenges">
+               </a>
+                <p>نقوم بطرح تحديات ونناقش الحلول ثم نعرض الحل الأسبوع.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="chal-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">التحديات</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5YIbX_M0rMx27_yKI6JswD" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>صناعة الألعاب PyGame</h2>
+                <a href="#courses" data-toggle="modal" data-target="#Pygame-model">
+                  <img src="img/pygame.png" class="img-responsive entrance-pic PyGame" alt="PyGame">
+                </a>
+                <p>تعلم صناعة لعبتك البسيطة من البداية حتي الإحتراف .</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="Pygame-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">صناعة الألعاب PyGame</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5oRDK4eXsWFH72_B6_EfjF" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>برمجة التطبيقات tKinter</h2>
+                <a href="#courses" data-toggle="modal" data-target="#tKinter-model">
+                  <img src="img/tkinter.png" class="img-responsive entrance-pic Tkinter" alt="Tkinter">
+                </a>
+                <p>عمل تطبيقات لسطح المكتب بإستخدام مكتبة tkinter .</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="tKinter-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">برمجة التطبيقات tKinter</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq6k_8DOtlhCfCqO-LrESN4z" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>هيكلة البيانات Data structures</h2>
+                <a href="#courses" data-toggle="modal" data-target="#Data-model">
+                  <img src="img/Data.png" class="img-responsive entrance-pic Data" alt="Data">
+                </a>
+                <p>تعلم صنع خوارزميات محكمة فيها كل الإحتمالات .</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="Data-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">هيكلة البيانات Data structures</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5m2lCUbiJJkdLYcJVd0cxA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2>المشاكل والحلول</h2>
+                <a href="#courses" data-toggle="modal" data-target="#prob-model">
+                  <img src="img/prob.png" class="img-responsive entrance-pic prob" alt="prob">
+                </a>
+                <p>حل المشاكل المتعلقة ببايثون .</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="prob-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">المشاكل والحلول</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq4uleIFZ98uBlvEC19Mb7HZ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid article" id="article">
+      <div class="container">
+
+        <div class="row headerOfaection">
+          <h1>المقالات</h1>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/atical-1.jpg" class="img-responsive entrance-pic artic-1" alt="المقالة الأولي">
+              <div class="caption">
+                <h3>طريقك إلي بايثون</h3>
+                <p>في هذه المقالة نتكلم عن بايثون .</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/django-article.jpg" class="img-responsive entrance-pic artic-2" alt="المقالة الأولي">
+              <div class="caption">
+                <h3>يعني اية Django</h3>
+                <p> لو عاوز تعرف يعني اية Django واية اهميتة اقرا البوست دة  .</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/Raspberry-Pi .jpg" class="img-responsive entrance-pic artic-3" alt="المقالة الأولي">
+              <div class="caption">
+                <h3>بايثون و Raspberry Pi</h3>
+                <p>النهاردة هنتكلم عن ال Raspberry Pi .</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid pics" id="pics">
+      <div class="container">
+
+        <div class="row headerOfaection">
+          <h1>الصور</h1>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <a href="#pics" data-toggle="modal" data-target="#myModal1">
+                <img src="img/Micropython.jpg" class="img-responsive entrance-pic pic-3" alt="المقالة الأولي ">
+              </a>
+              <div class="caption">
+                <h3>بايثون يتحكم في الشرائح</h3>
+                <p>بإستخدام لغة بايثون تستطيع التحكم في الشرائح .</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">بايثون يتحكم في الشرائح</h4>
+                </div>
+                <div class="modal-body">
+                  <p>بإستخدام لغة بايثون تستطيع التحكم في الشرائح . </p>
+                  <img src="img/Micropython.jpg" class="img-responsive" alt="المقالة الأولي ">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <a href="#pics" data-toggle="modal" data-target="#myModal2"><img src="img/python-pic.png" class="img-responsive entrance-pic pic-3" alt="المقالة الأولي"></a>
+              <div class="caption">
+                <h3>البساطة</h3>
+                <p>لا تحتاج إلي تراكيب لغوية معقدة في بايثون .</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">البساطة</h4>
+                </div>
+                <div class="modal-body">
+                  <p>لا تحتاج إلي تراكيب لغوية معقدة في بايثون .</p>
+                  <img src="img/python-pic.png" class="img-responsive" alt="المقالة الأولي ">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7V94Vv4MewNdJG8e3Ax4mC" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <a href="#pics" data-toggle="modal" data-target="#myModal3"><img src="img/popular-languages.png" class="img-responsive entrance-pic pic-3" alt="المقالة الأولي"></a>
+              <div class="caption">
+                <h3>أكثر لغات البرمجة انتشارا</h3>
+                <p>من حيث الإستخدام وسوق العمل .</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">أكثر لغات البرمجة انتشارا</h4>
+                </div>
+                <div class="modal-body">
+                  <p>من حيث الإستخدام وسوق العمل .</p>
+                  <img src="img/popular-languages.png" class="img-responsive" alt="المقالة الأولي ">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="container-fluid about-me" id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/mahmoud.png" class="img-responsive entrance-pic mahmoud-pic" alt="mahmoud">
+          </div>
+          <div class="col-md-8 text-right">
+            <h2>محمود أحمد</h2>
+            <p>أكتب أي حاجه هنا بقي عشان الكلام يبقي واضح وكده .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid bg-info brought-by">
+      <div class="container">
+        <div class="row">
+              <p> © تم تصميم المحتوي بواسطة  
+                <a href="https://www.facebook.com/ahmedakef4">أحمد عاكف</a> .
+              </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- all models only 
+
+          <div class="modal fade" id="basics-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">أساسيات لغة بايثون</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7kzsIpO3s7hnf5hl6zu-QR" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="modal fade" id="oop-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">البرمجة الشيئية oop</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq6WZBtARcgiWgz_S8wjJDft" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="django-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">جانغو</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7-rmF_QLFblZ_E3gN6wmyU" frameborder="0" allowfullscreen></iframe><br><br>
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq7V94Vv4MewNdJG8e3Ax4mC" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="modal fade" id="Qt-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">مكتبة Qt</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5OyK7Tp25kx_m5rPr76DEC" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="modal fade" id="chal-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">التحديات</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5YIbX_M0rMx27_yKI6JswD" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="modal fade" id="Pygame-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">صناعة الألعاب PyGame</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5oRDK4eXsWFH72_B6_EfjF" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="modal fade" id="tKinter-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">برمجة التطبيقات tKinter</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq6k_8DOtlhCfCqO-LrESN4z" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="modal fade" id="Data-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">هيكلة البيانات Data structures</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq5m2lCUbiJJkdLYcJVd0cxA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="modal fade" id="prob-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">المشاكل والحلول</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLTjpmsGYzQq4uleIFZ98uBlvEC19Mb7HZ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-right" data-dismiss="modal">إغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+-->

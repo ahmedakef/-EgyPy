@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@font-face {
+  font-family: 'flat';
+  src: url("../fonts/JF Flat regular.ttf");
+  font-style: normal; }
+body {
+  font-family: Droid Arabic Kufi,flat , serif;
+  text-align: center;
+  position: relative;
+ }
+ nav .navbar-left a{
+  padding: 10px 0px 0px 10px ;
+}
+.navbar-brand img {
+  height: 30px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition:.5s;
+}
+#courses img:hover,#pics img:hover{
+  transform: scale(1.1) rotate(3deg);
+/*  border: 4px solid #3498db;
+  border-radius: 50%;*/
+
+}
+.entrance-pic,.about-me h2,.about-me p,.brought-by{
+  visibility: hidden;
+}
+
+.intro-background{
+  background-image: url("../img/other/splitshire.jpeg");
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  background-attachment: fixed;
+  color: #DFEAF1;
+}
+.intro{
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+.intro h1{
+  font-size: 50px;
+}
+
+.brief{
+  /*background-color: #222439;*/
+  background-color:#1D2733;
+  color:#EAE7EE;
+  min-height: 300px;
+}
+
+ol.carousel-indicators{
+  margin-bottom: -40px;
+}
+.headerOfaection{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.courses,.pics{
+  background-color: #DFEAF1;
+}
+.courses .col-md-4{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.panel,.thumbnail{
+  background-color:transparent;
+}
+.panel-body{
+  height: 460px;
+}
+.courses img{
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+
+.article,.about-me{
+  background-color: #EDF0F9;
+}
+.pics .col-md-4 img{
+  max-width: 250px;
+  max-height: 250px;
+}
+.about-me{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.mahmoud-pic{
+  border: 4px solid #557874;
+  border-radius: 50%;
+}
+.about-me .col-md-8{
+  padding-top: 50px;
+}
+.brought-by p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
